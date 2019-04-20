@@ -5,9 +5,9 @@
 #include <Nazara/Core/Semaphore.hpp>
 
 #if defined(NAZARA_PLATFORM_WINDOWS)
-	#include <Nazara/Core/Win32/SemaphoreImpl.hpp>
+	#include "Win32/SemaphoreImpl.hpp"
 #elif defined(NAZARA_PLATFORM_POSIX)
-	#include <Nazara/Core/Posix/SemaphoreImpl.hpp>
+	#include "Posix/SemaphoreImpl.hpp"
 #else
 	#error Lack of implementation: Semaphore
 #endif

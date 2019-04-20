@@ -8,9 +8,9 @@
 #include <memory>
 
 #if defined(NAZARA_PLATFORM_WINDOWS)
-	#include <Nazara/Core/Win32/DynLibImpl.hpp>
+	#include "Win32/DynLibImpl.hpp"
 #elif defined(NAZARA_PLATFORM_POSIX)
-	#include <Nazara/Core/Posix/DynLibImpl.hpp>
+	#include "Posix/DynLibImpl.hpp"
 #else
 	#error No implementation for this platform
 #endif

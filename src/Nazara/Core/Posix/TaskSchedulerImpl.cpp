@@ -2,7 +2,7 @@
 // This file is part of the "Nazara Engine - Core module"
 // For conditions of distribution and use, see copyright notice in Config.hpp
 
-#include <Nazara/Core/Posix/TaskSchedulerImpl.hpp>
+#include "TaskSchedulerImpl.hpp"
 #include <Nazara/Core/Functor.hpp>
 #include <Nazara/Core/Debug.hpp>
 

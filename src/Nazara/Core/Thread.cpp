@@ -10,9 +10,9 @@
 #include <ostream>
 
 #if defined(NAZARA_PLATFORM_WINDOWS)
-	#include <Nazara/Core/Win32/ThreadImpl.hpp>
+	#include "Win32/ThreadImpl.hpp"
 #elif defined(NAZARA_PLATFORM_POSIX)
-	#include <Nazara/Core/Posix/ThreadImpl.hpp>
+	#include "Posix/ThreadImpl.hpp"
 #else
 	#error Thread has no implementation
 #endif

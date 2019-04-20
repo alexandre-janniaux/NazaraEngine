@@ -8,9 +8,9 @@
 #include <cstring>
 
 #if defined(NAZARA_PLATFORM_WINDOWS)
-	#include <Nazara/Core/Win32/HardwareInfoImpl.hpp>
+	#include "Win32/HardwareInfoImpl.hpp"
 #elif defined(NAZARA_PLATFORM_POSIX)
-	#include <Nazara/Core/Posix/HardwareInfoImpl.hpp>
+	#include "Posix/HardwareInfoImpl.hpp"
 #else
 	#error Lack of implementation: HardwareInfo
 #endif

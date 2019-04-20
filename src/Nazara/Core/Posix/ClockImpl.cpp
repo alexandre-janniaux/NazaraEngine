@@ -2,7 +2,7 @@
 // This file is part of the "Nazara Engine - Core module"
 // For conditions of distribution and use, see copyright notice in Config.hpp
 
-#include <Nazara/Core/Posix/ClockImpl.hpp>
+#include "ClockImpl.hpp"
 #include <sys/time.h>
 #include <Nazara/Core/Debug.hpp>
 

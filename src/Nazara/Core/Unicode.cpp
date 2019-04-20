@@ -31,7 +31,7 @@ namespace Nz
 		UInt32 character;
 	};
 
-#include <Nazara/Core/UnicodeData.hpp>
+#include "UnicodeData.hpp"
 
 	namespace
 	{

@@ -7,9 +7,9 @@
 #include <Nazara/Core/Mutex.hpp>
 
 #if defined(NAZARA_PLATFORM_WINDOWS)
-	#include <Nazara/Core/Win32/ConditionVariableImpl.hpp>
+	#include "Win32/ConditionVariableImpl.hpp"
 #elif defined(NAZARA_PLATFORM_POSIX)
-	#include <Nazara/Core/Posix/ConditionVariableImpl.hpp>
+	#include "Posix/ConditionVariableImpl.hpp"
 #else
 	#error Condition variable has no implementation
 #endif

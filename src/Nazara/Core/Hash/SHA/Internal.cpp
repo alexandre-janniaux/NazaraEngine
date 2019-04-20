@@ -37,7 +37,7 @@
  * $Id: sha2.c,v 1.4 2004/01/07 22:58:18 adg Exp $
  */
 
-#include <Nazara/Core/Hash/SHA/Internal.hpp>
+#include "Internal.hpp"
 #include <Nazara/Core/Endianness.hpp>
 #include <cstring>
 #include <Nazara/Core/Debug.hpp>

@@ -6,9 +6,9 @@
 #include <Nazara/Core/Error.hpp>
 
 #if defined(NAZARA_PLATFORM_WINDOWS)
-	#include <Nazara/Core/Win32/MutexImpl.hpp>
+	#include "Win32/MutexImpl.hpp"
 #elif defined(NAZARA_PLATFORM_POSIX)
-	#include <Nazara/Core/Posix/MutexImpl.hpp>
+	#include "Posix/MutexImpl.hpp"
 #else
 	#error Lack of implementation: Mutex
 #endif

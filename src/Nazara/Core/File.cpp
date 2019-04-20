@@ -12,9 +12,9 @@
 #include <memory>
 
 #if defined(NAZARA_PLATFORM_WINDOWS)
-	#include <Nazara/Core/Win32/FileImpl.hpp>
+	#include "Win32/FileImpl.hpp"
 #elif defined(NAZARA_PLATFORM_POSIX)
-	#include <Nazara/Core/Posix/FileImpl.hpp>
+	#include "Posix/FileImpl.hpp"
 #else
 	#error OS not handled
 #endif

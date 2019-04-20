@@ -11,9 +11,9 @@
 #include <string>
 
 #if defined(NAZARA_PLATFORM_WINDOWS)
-	#include <Nazara/Core/Win32/DirectoryImpl.hpp>
+	#include "Win32/DirectoryImpl.hpp"
 #elif defined(NAZARA_PLATFORM_POSIX)
-	#include <Nazara/Core/Posix/DirectoryImpl.hpp>
+	#include "Posix/DirectoryImpl.hpp"
 #else
 	#error OS not handled
 #endif

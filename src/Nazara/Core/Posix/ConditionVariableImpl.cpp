@@ -2,8 +2,8 @@
 // This file is part of the "Nazara Engine - Core module"
 // For conditions of distribution and use, see copyright notice in Config.hpp
 
-#include <Nazara/Core/Posix/ConditionVariableImpl.hpp>
-#include <Nazara/Core/Posix/MutexImpl.hpp>
+#include "ConditionVariableImpl.hpp"
+#include "MutexImpl.hpp"
 #include <sys/time.h>
 #include <time.h>
 #include <Nazara/Core/Debug.hpp>

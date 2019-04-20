@@ -3,7 +3,7 @@
 // For conditions of distribution and use, see copyright notice in Config.hpp
 
 #include <Nazara/Core/Hash/SHA256.hpp>
-#include <Nazara/Core/Hash/SHA/Internal.hpp>
+#include "SHA/Internal.hpp"
 #include <Nazara/Core/Debug.hpp>
 
 namespace Nz

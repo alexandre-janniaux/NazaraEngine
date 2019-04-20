@@ -7,9 +7,9 @@
 #include <Nazara/Core/HardwareInfo.hpp>
 
 #if defined(NAZARA_PLATFORM_WINDOWS)
-	#include <Nazara/Core/Win32/TaskSchedulerImpl.hpp>
+	#include "Win32/TaskSchedulerImpl.hpp"
 #elif defined(NAZARA_PLATFORM_POSIX)
-	#include <Nazara/Core/Posix/TaskSchedulerImpl.hpp>
+	#include "Posix/TaskSchedulerImpl.hpp"
 #else
 	#error Lack of implementation: Task Scheduler
 #endif

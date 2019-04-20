@@ -2,7 +2,7 @@
 // This file is part of the "Nazara Engine - Core module"
 // For conditions of distribution and use, see copyright notice in Config.hpp
 
-#include <Nazara/Core/Posix/DirectoryImpl.hpp>
+#include "DirectoryImpl.hpp"
 #include <Nazara/Core/Directory.hpp>
 #include <Nazara/Core/Error.hpp>
 #include <Nazara/Core/StackArray.hpp>

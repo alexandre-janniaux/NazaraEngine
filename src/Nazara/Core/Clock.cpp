@@ -5,9 +5,9 @@
 #include <Nazara/Core/Clock.hpp>
 
 #if defined(NAZARA_PLATFORM_WINDOWS)
-	#include <Nazara/Core/Win32/ClockImpl.hpp>
+	#include "Win32/ClockImpl.hpp"
 #elif defined(NAZARA_PLATFORM_POSIX)
-	#include <Nazara/Core/Posix/ClockImpl.hpp>
+	#include "Posix/ClockImpl.hpp"
 #else
 	#error OS not handled
 #endif
