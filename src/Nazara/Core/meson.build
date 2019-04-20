@@ -81,7 +81,9 @@ nazara_core_sources += nazara_core_posix_sources
 thread_dep = dependency('threads')
 dl_dep = cxx.find_library('dl', required: false)
 
-library('nazara-core',
+nazara_core_lib = library('nazara-core',
   nazara_core_sources,
   include_directories: [nazara_includes, thirdparty_includes],
   dependencies: [thread_dep, dl_dep])
+
+nazara_core_dep = declare_dependency(link_with: nazara_core_lib)
