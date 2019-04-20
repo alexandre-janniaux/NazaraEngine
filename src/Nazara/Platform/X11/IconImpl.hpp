@@ -8,7 +8,8 @@
 #define NAZARA_ICONIMPL_HPP
 
 #include <Nazara/Prerequisites.hpp>
-#include <Nazara/Platform/X11/ScopedXCB.hpp>
+
+#include "ScopedXCB.hpp"
 
 namespace Nz
 {

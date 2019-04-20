@@ -96,6 +96,6 @@ namespace Nz
 	};
 }
 
-#include <Nazara/Platform/X11/ScopedXCB.inl>
+#include "ScopedXCB.inl"
 
 #endif // NAZARA_SCOPEDXCB_HPP

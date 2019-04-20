@@ -7,9 +7,9 @@
 #include <functional>
 
 #if defined(NAZARA_PLATFORM_WINDOWS)
-	#include <Nazara/Platform/Win32/VideoModeImpl.hpp>
+	#include "Win32/VideoModeImpl.hpp"
 #elif defined(NAZARA_PLATFORM_X11)
-	#include <Nazara/Platform/X11/VideoModeImpl.hpp>
+	#include "X11/VideoModeImpl.hpp"
 #else
 	#error Lack of implementation: Window
 #endif

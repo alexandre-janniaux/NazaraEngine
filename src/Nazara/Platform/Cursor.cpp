@@ -5,9 +5,9 @@
 #include <Nazara/Platform/Cursor.hpp>
 
 #if defined(NAZARA_PLATFORM_WINDOWS)
-	#include <Nazara/Platform/Win32/CursorImpl.hpp>
+	#include "Win32/CursorImpl.hpp"
 #elif defined(NAZARA_PLATFORM_X11)
-	#include <Nazara/Platform/X11/CursorImpl.hpp>
+	#include "X11/CursorImpl.hpp"
 #else
 	#error Lack of implementation: Cursor
 #endif

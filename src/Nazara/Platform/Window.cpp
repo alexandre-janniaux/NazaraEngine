@@ -10,9 +10,9 @@
 #include <Nazara/Platform/Icon.hpp>
 
 #if defined(NAZARA_PLATFORM_WINDOWS)
-	#include <Nazara/Platform/Win32/WindowImpl.hpp>
+	#include "Win32/WindowImpl.hpp"
 #elif defined(NAZARA_PLATFORM_X11)
-	#include <Nazara/Platform/X11/WindowImpl.hpp>
+	#include "X11/WindowImpl.hpp"
 #else
 	#error Lack of implementation: Window
 #endif

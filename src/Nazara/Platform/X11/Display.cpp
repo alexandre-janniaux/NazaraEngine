@@ -2,13 +2,14 @@
 // This file is part of the "Nazara Engine - Platform module"
 // For conditions of distribution and use, see copyright notice in Config.hpp
 
-#include <Nazara/Platform/X11/Display.hpp>
 #include <Nazara/Core/Error.hpp>
 #include <Nazara/Core/String.hpp>
-#include <Nazara/Platform/X11/ScopedXCB.hpp>
 #include <xcb/xcb_keysyms.h>
 #include <map>
 #include <Nazara/Platform/Debug.hpp>
+
+#include "Display.hpp"
+#include "ScopedXCB.hpp"
 
 namespace Nz
 {

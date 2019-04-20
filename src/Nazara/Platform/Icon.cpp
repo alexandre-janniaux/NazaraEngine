@@ -5,9 +5,9 @@
 #include <Nazara/Platform/Icon.hpp>
 
 #if defined(NAZARA_PLATFORM_WINDOWS)
-	#include <Nazara/Platform/Win32/IconImpl.hpp>
+	#include "Win32/IconImpl.hpp"
 #elif defined(NAZARA_PLATFORM_X11)
-	#include <Nazara/Platform/X11/IconImpl.hpp>
+	#include "X11/IconImpl.hpp"
 #else
 	#error Lack of implementation: Icon
 #endif

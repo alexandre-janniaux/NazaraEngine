@@ -5,9 +5,9 @@
 #include <Nazara/Platform/Keyboard.hpp>
 
 #if defined(NAZARA_PLATFORM_WINDOWS)
-	#include <Nazara/Platform/Win32/InputImpl.hpp>
+	#include "Win32/InputImpl.hpp"
 #elif defined(NAZARA_PLATFORM_X11)
-	#include <Nazara/Platform/X11/InputImpl.hpp>
+	#include "X11/InputImpl.hpp"
 #else
 	#error Lack of implementation: Keyboard
 #endif

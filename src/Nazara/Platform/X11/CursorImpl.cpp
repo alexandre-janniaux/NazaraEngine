@@ -2,13 +2,14 @@
 // This file is part of the "Nazara Engine - Platform module"
 // For conditions of distribution and use, see copyright notice in Config.hpp
 
-#include <Nazara/Platform/X11/CursorImpl.hpp>
 #include <Nazara/Core/CallOnExit.hpp>
 #include <Nazara/Core/Error.hpp>
 #include <Nazara/Utility/Image.hpp>
-#include <Nazara/Platform/X11/Display.hpp>
-#include <Nazara/Platform/X11/ScopedXCB.hpp>
 #include <xcb/xcb_image.h>
+
+#include "Display.hpp"
+#include "CursorImpl.hpp"
+#include "ScopedXCB.hpp"
 
 // Some older versions of xcb/util-renderutil (notably the one available on Travis CI) use `template` as an argument name
 // This is a fixed bug (https://cgit.freedesktop.org/xcb/util-renderutil/commit/?id=8d15acc45a47dc4c922eee5b99885db42bc62c17) but until Travis-CI

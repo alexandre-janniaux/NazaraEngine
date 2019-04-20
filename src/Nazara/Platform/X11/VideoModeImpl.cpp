@@ -2,14 +2,15 @@
 // This file is part of the "Nazara Engine - Platform module"
 // For conditions of distribution and use, see copyright notice in Config.hpp
 
-#include <Nazara/Platform/X11/VideoModeImpl.hpp>
 #include <Nazara/Core/Error.hpp>
 #include <Nazara/Platform/VideoMode.hpp>
-#include <Nazara/Platform/X11/Display.hpp>
-#include <Nazara/Platform/X11/ScopedXCB.hpp>
 #include <xcb/randr.h>
 #include <algorithm>
 #include <Nazara/Platform/Debug.hpp>
+
+#include "Display.hpp"
+#include "ScopedXCB.hpp"
+#include "VideoModeImpl.hpp"
 
 namespace Nz
 {

@@ -2,12 +2,13 @@
 // This file is part of the "Nazara Engine - Platform module"
 // For conditions of distribution and use, see copyright notice in Config.hpp
 
-#include <Nazara/Platform/X11/IconImpl.hpp>
 #include <Nazara/Core/CallOnExit.hpp>
 #include <Nazara/Core/Error.hpp>
 #include <Nazara/Utility/Image.hpp>
-#include <Nazara/Platform/X11/Display.hpp>
 #include <Nazara/Platform/Debug.hpp>
+
+#include "X11/Display.hpp"
+#include "X11/IconImpl.hpp"
 
 namespace Nz
 {

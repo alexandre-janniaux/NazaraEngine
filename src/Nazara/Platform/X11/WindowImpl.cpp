@@ -4,7 +4,6 @@
 
 // Un grand merci à Laurent Gomila pour la SFML qui m'aura bien aidé à réaliser cette implémentation
 
-#include <Nazara/Platform/X11/WindowImpl.hpp>
 #include <Nazara/Core/CallOnExit.hpp>
 #include <Nazara/Core/Error.hpp>
 #include <Nazara/Platform/Cursor.hpp>
@@ -12,14 +11,16 @@
 #include <Nazara/Platform/Icon.hpp>
 #include <Nazara/Platform/VideoMode.hpp>
 #include <Nazara/Platform/Window.hpp>
-#include <Nazara/Platform/X11/CursorImpl.hpp>
-#include <Nazara/Platform/X11/Display.hpp>
-#include <Nazara/Platform/X11/IconImpl.hpp>
 #include <X11/keysym.h>
 #include <X11/XF86keysym.h>
 #include <X11/Xutil.h>
 #include <xcb/xcb_keysyms.h>
 #include <Nazara/Platform/Debug.hpp>
+
+#include "CursorImpl.hpp"
+#include "Display.hpp"
+#include "IconImpl.hpp"
+#include "WindowImpl.hpp"
 
 /*
 	Things to do left:
