@@ -9,8 +9,12 @@ nazara_soname_version = '0.4.0'
 # tools
 cxx = meson.get_compiler('cpp')
 
-nazara_includes = include_directories('include')
+nazara_includes = include_directories(['include', 'src'])
 thirdparty_includes = include_directories('thirdparty/include')
+
+stbimage_sources = files(
+  'thirdparty/src/stb/stb_image.cpp',
+  'thirdparty/src/stb/stb_image_write.cpp',)
 
 subdir('src')
 # subdir(examples)
