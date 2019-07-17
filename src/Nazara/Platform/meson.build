@@ -37,7 +37,7 @@ xcb_render_util_dep = cxx.find_library('xcb-render-util')
 xcb_cursor_dep = cxx.find_library('xcb-cursor')
 x11_dep = cxx.find_library('X11')
 
-library('nazara-platform',
+nazara_platform_lib = library('nazara-platform',
   nazara_platform_sources,
   include_directories: [nazara_includes, thirdparty_includes],
   dependencies: [
@@ -54,3 +54,5 @@ library('nazara-platform',
     x11_dep,
     nazara_core_dep,
     nazara_utility_dep])
+
+nazara_platform_dep = declare_dependency(link_with: nazara_platform_lib)
