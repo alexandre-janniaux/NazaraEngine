@@ -34,7 +34,7 @@ namespace Nz
 		public:
 			LuaState(const LuaState&) = default;
 			LuaState(LuaState&& instance) = default;
-			~LuaState() = default;
+			virtual ~LuaState() = default;
 
 			void ArgCheck(bool condition, unsigned int argNum, const char* error) const;
 			void ArgCheck(bool condition, unsigned int argNum, const String& error) const;
