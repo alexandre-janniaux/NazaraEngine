@@ -3,7 +3,7 @@
 // For conditions of distribution and use, see copyright notice in Config.hpp
 
 #include <Nazara/Lua/LuaCoroutine.hpp>
-#include <Lua/lua.h>
+#include <lua.h>
 #include <Nazara/Lua/LuaInstance.hpp>
 #include <Nazara/Lua/Debug.hpp>
 

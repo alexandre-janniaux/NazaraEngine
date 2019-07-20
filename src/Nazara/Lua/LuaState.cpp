@@ -3,8 +3,8 @@
 // For conditions of distribution and use, see copyright notice in Config.hpp
 
 #include <Nazara/Lua/LuaState.hpp>
-#include <Lua/lauxlib.h>
-#include <Lua/lua.h>
+#include <lauxlib.h>
+#include <lua.h>
 #include <Nazara/Core/Clock.hpp>
 #include <Nazara/Core/Error.hpp>
 #include <Nazara/Core/File.hpp>
