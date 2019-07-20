@@ -17,6 +17,6 @@ stbimage_sources = files(
   'thirdparty/src/stb/stb_image_write.cpp',)
 
 subdir('src')
-# subdir(examples)
+subdir('examples')
 # subdir(SDK)
 # subdir(tests)

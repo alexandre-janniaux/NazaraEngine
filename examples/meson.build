@@ -1,0 +1,8 @@
+#subdir(DopplerEffect)
+#subdir(FirstScene)
+#subdir(HardwareInfo)
+subdir('MeshInfos')
+#subdir(Particles)
+#subdir(Tut00)
+#subdir(Tut01)
+#subdir(Tut02)
