@@ -3,9 +3,6 @@
 // For conditions of distribution and use, see copyright notice in Config.hpp
 
 #include <Nazara/Lua/LuaInstance.hpp>
-#include <lauxlib.h>
-#include <lua.h>
-#include <lualib.h>
 #include <Nazara/Core/Clock.hpp>
 #include <Nazara/Core/Error.hpp>
 #include <array>
@@ -13,6 +10,13 @@
 #include <cstdlib>
 #include <stdexcept>
 #include <Nazara/Lua/Debug.hpp>
+
+extern "C"
+{
+# include <lauxlib.h>
+# include <lua.h>
+# include <lualib.h>
+}
 
 namespace Nz
 {
