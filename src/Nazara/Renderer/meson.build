@@ -31,9 +31,11 @@ glx_dep = cxx.find_library('GLX')
 xcb_dep = cxx.find_library('xcb')
 x11_dep = cxx.find_library('X11')
 
-library('nazara-renderer',
+nazara_renderer_lib = library('nazara-renderer',
   nazara_renderer_sources,
   include_directories: [nazara_includes],
   dependencies: [ xcb_dep, glx_dep, x11_dep,
                   nazara_platform_dep, nazara_utility_dep, nazara_core_dep ],
   cpp_args: '-DNAZARA_RENDERER_OPENGL')
+
+nazara_renderer_dep = declare_dependency(link_with: nazara_renderer_lib)
